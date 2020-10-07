@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CFFmpeg",
+        "repositoryURL": "https://github.com/videovillage/CFFmpeg.git",
+        "state": {
+          "branch": "main",
+          "revision": "c40927b1af16f6ec63fb1f7379dcdc84c945a8d7",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
