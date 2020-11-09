@@ -426,6 +426,21 @@ extension AVFrame {
     get { AVChromaLocation(native: native.pointee.chroma_location) }
     set { native.pointee.chroma_location = newValue.native }
   }
+    
+ ///  Cropping
+ ///
+ ///  Video frames only. The number of pixels to discard from the the
+ ///  top/bottom/left/right border of the frame to obtain the sub-rectangle of
+ ///  the frame intended for presentation.
+  public var crop: (top: Int, bottom: Int, left: Int, right: Int) {
+    get { (native.pointee.crop_top, native.pointee.crop_bottom, native.pointee.crop_left, native.pointee.crop_right) }
+    set {
+        native.pointee.crop_top = newValue.top
+        native.pointee.crop_bottom = newValue.bottom
+        native.pointee.crop_left = newValue.left
+        native.pointee.crop_right = newValue.right
+    }
+  }
 }
 
 // MARK: - Audio
