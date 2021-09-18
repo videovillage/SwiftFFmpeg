@@ -480,6 +480,15 @@ extension AVPixelFormat {
   /// as above, but U and V bytes are swapped
   public static let NV42 = AV_PIX_FMT_NV42
 
+    /// packed YUV 4:2:2 like YUYV422, 20bpp, data in the high bits, big-endian
+    public static let Y210BE = AV_PIX_FMT_Y210BE
+    /// packed YUV 4:2:2 like YUYV422, 20bpp, data in the high bits, little-endian
+    public static let Y210LE = AV_PIX_FMT_Y210LE
+    /// packed RGB 10:10:10, 30bpp, (msb)2X 10R 10G 10B(lsb), little-endian, X=unused/undefined
+    public static let X2RGB10LE = AV_PIX_FMT_X2RGB10LE
+    /// packed RGB 10:10:10, 30bpp, (msb)2X 10R 10G 10B(lsb), big-endian, X=unused/undefined
+    public static let X2RGB10BE = AV_PIX_FMT_X2RGB10BE
+
   /// Return the pixel format corresponding to name.
   ///
   /// If there is no pixel format with name name, then looks for a pixel format with the name
