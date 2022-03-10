@@ -80,11 +80,6 @@ public final class AVStream {
     native.pointee.start_time
   }
 
-  /// Timestamp corresponding to the last dts sync point.
-  public var firstDTS: Int64 {
-    native.pointee.first_dts
-  }
-
   public var duration: Int64 {
     native.pointee.duration
   }
