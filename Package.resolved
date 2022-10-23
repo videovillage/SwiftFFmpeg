@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "CFFmpeg",
-        "repositoryURL": "https://github.com/videovillage/CFFmpeg.git",
-        "state": {
-          "branch": "main",
-          "revision": "d25fb30616bd0bf89ee6f000e52937d75fbc8493",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "cffmpeg",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/videovillage/CFFmpeg.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2341d899011c3f6c7f61d954bf66b772831bc41a"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
