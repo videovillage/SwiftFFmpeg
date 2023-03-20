@@ -5,7 +5,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/videovillage/CFFmpeg.git",
       "state" : {
-        "branch" : "main",
+        "branch" : "ffmpeg-5",
         "revision" : "2341d899011c3f6c7f61d954bf66b772831bc41a"
       }
     }

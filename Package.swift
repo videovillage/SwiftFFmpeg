@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/videovillage/CFFmpeg.git",
-            branch: "main"
+            branch: "ffmpeg-5"
         )
     ],
     targets: [
