@@ -288,8 +288,6 @@ extension AVFormatContext {
     public static let bitexact = Flag(rawValue: AVFMT_FLAG_BITEXACT)
     /// Try to interleave outputted packets by dts (using this flag can slow demuxing down).
     public static let sortDTS = Flag(rawValue: AVFMT_FLAG_SORT_DTS)
-    /// Enable use of private Flag by delaying codec open (this could be made default once all code is converted).
-    public static let privOpt = Flag(rawValue: AVFMT_FLAG_PRIV_OPT)
     /// Enable fast, but inaccurate seeks for some formats.
     public static let fastSeek = Flag(rawValue: AVFMT_FLAG_FAST_SEEK)
     /// Stop muxing when the shortest stream stops.
@@ -318,7 +316,6 @@ extension AVFormatContext.Flag: CustomStringConvertible {
     if contains(.flushPackets) { str += "flushPackets, " }
     if contains(.bitexact) { str += "bitexact, " }
     if contains(.sortDTS) { str += "sortDTS, " }
-    if contains(.privOpt) { str += "privOpt, " }
     if contains(.fastSeek) { str += "fastSeek, " }
     if contains(.shortest) { str += "shortest, " }
     if contains(.autoBSF) { str += "autoBSF, " }
